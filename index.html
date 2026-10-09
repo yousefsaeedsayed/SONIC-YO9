@@ -119,6 +119,11 @@ h3 { font-size: 1.12rem; font-weight: 600; line-height: 1.5; }
 .about .txt .lede { max-width: 54ch; }
 .xl { color: var(--fg); text-underline-offset: 4px; text-decoration-color: var(--accent); }
 .xl:hover { text-decoration-thickness: 2px; }
+.founder { margin: clamp(40px, 6vw, 72px) 0 0; border: 1px solid var(--line); position: relative; }
+.founder img { display: block; width: 100%; height: auto; }
+.founder figcaption { position: absolute; inset-inline-start: 0; bottom: 0; padding: 18px 24px; display: grid; gap: 4px; background: linear-gradient(0deg, rgba(10,10,9,.88), rgba(10,10,9,0)); width: 100%; }
+.founder strong { font-family: var(--f-display); font-size: clamp(1.2rem, 2.4vw, 1.7rem); font-weight: 600; }
+.founder .mono { color: var(--muted); font-size: 0.74rem; letter-spacing: var(--track); text-transform: uppercase; }
 .facts { display: grid; grid-template-columns: repeat(4, 1fr); border-block: 1px solid var(--line); margin-top: clamp(40px, 6vw, 72px); }
 .facts > div { padding: 28px 24px; border-inline-start: 1px solid var(--line); display: grid; gap: 10px; align-content: start; min-width: 0; }
 .facts > div:first-child { border-inline-start: 0; }
@@ -377,6 +382,10 @@ footer .r2 { display: flex; flex-wrap: wrap; justify-content: space-between; gap
           <div><h3 data-i="p4t">On-time delivery</h3><p data-i="p4d">Clear scope and deliverables for every project, agreed before we start.</p></div>
         </div>
       </div>
+      <figure class="founder">
+        <img src="about/founder.jpg" width="1195" height="896" alt="Youssef Saeed Sayed, owner of SONIC YO9" loading="lazy">
+        <figcaption><strong data-i="ow_name">Youssef Saeed Sayed</strong><span class="mono" data-i="ow_role">Founder &amp; Owner</span></figcaption>
+      </figure>
       <div class="facts">
         <div><span class="mono" data-i="f1l">Founded</span><strong data-i="f1v">2022</strong></div>
         <div><span class="mono" data-i="f2l">Owner</span><strong data-i="f2v">Youssef Saeed Sayed</strong></div>
@@ -806,6 +815,7 @@ footer .r2 { display: flex; flex-wrap: wrap; justify-content: space-between; gap
     c6: 'متجر الملابس', c6d: 'هودي وسويترات وبناطيل وأكثر.',
     c7: 'تصوير الطعام', c7d: 'تصوير مطاعم وقوائم طعام يبيع.', c7l: 'القوائم وتطبيقات التوصيل والسوشيال ميديا تحتاج طعامًا يبدو شهيًا كما طعمه. نجهّز كل طبق ونضيئه ونصوّره.',
     i7a: 'تصوير القوائم وتطبيقات التوصيل', i7b: 'لقطات الجبنة المسحوبة والبخار والحركة', i7c: 'مشاهد طاولة منسّقة ولقطات علوية', i7d: 'فيديوهات طعام قصيرة للريلز وتيك توك', o_food: 'تصوير طعام',
+    ow_role: 'المؤسس والمالك', ow_name: 'يوسف سعيد سيد',
     c6l: 'نبيع أيضًا ملابس بكل أنواعها، من الهودي والسويترات إلى البناطيل والأطقم.',
     ce3: 'متجرنا', ce4: 'اطلب',
     i6a: 'هودي وسويت شيرت', i6b: 'سويترات تريكو', i6c: 'بناطيل وأطقم', i6d: 'كل أنواع الملابس، قل لنا ما تحتاجه',
